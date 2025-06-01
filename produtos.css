@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #1a1a1a;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffa600;
+}
+
+.nav-list li a:hover,
+.nav-list li a:focus {
+  color: #FFD700; 
+}
+
+.products-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem 1rem 5rem;
+  background-color: #585757;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card {
+  background: #222;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+  width: 300px;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  padding-bottom: 1rem;
+  transition: transform 0.3s ease;
+ 
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+  object-fit: cover;
+  max-height: 180px;
+}
+
+.card h2 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.4rem;
+}
+
+.botao {
+  cursor: pointer;
+  background: linear-gradient(45deg, #ffffff, #d1d1d1);
+  border-radius: 5px;
+  border: 1px solid #a71010;
+  color: #000;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 0;
+  width: 60%;
+  box-shadow: 5px 5px 0 #a71010;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+.botao:hover {
+  background: linear-gradient(180deg, #d1d1d1, #ffffff);
+}
+
+footer {
+  background: #292828;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-top: 1px solid #817c7c;
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.contact-icon {
+  font-size: 2.5rem;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-icon:hover,
+.contact-icon:focus {
+  transform: scale(1.2);
+  color: #FFD700;
+}
+.contact-details-container {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  margin-left: 30px; /* Para dar um espaço entre os ícones e os textos */
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: white;
+  
+}
+
+.footer-note p {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+/* Responsividade */
+@media (max-width: 767px) {
+  .products-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacts {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
